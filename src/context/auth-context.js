@@ -56,7 +56,7 @@ class AuthProvaider extends Component {
         .catch(() => {
             this.setState({
                 user: null,
-                isLoggedIn: true,
+                isLoggedIn: false,
                 isLoading: false
             });
         })
