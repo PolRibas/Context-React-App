@@ -42,7 +42,7 @@ class Signup extends Component {
                     <div className='submit-div'>
                         <input className='submit' type='submit' value='Log in' />
                     </div>
-                    { errorMessage ? <p className='error'>Incorrect email or password</p> : null }
+                    { errorMessage ? <p className='error'>Can't use this email or username</p> : null }
                 </form>
         )
     }

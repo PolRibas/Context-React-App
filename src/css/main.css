@@ -207,3 +207,48 @@ a {
       transition: 1.2s;
       opacity: 0;
       height: 0px; }
+
+.private-page {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center; }
+  .private-page .logout-button {
+    width: 300px;
+    margin-top: 40px;
+    border: 2px solid #FFD56E;
+    padding: 5px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center; }
+  .private-page .logout-button:hover {
+    background: #FFD56E; }
+    .private-page .logout-button:hover p {
+      color: #44B88D; }
+
+.loading-component {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center; }
+  .loading-component p {
+    font-weight: 600;
+    font-size: 20px;
+    animation: loading 2s infinite ease-in-out; }
+
+@keyframes loading {
+  0% {
+    opacity: 0.2; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0.2; } }

@@ -56,7 +56,7 @@ class AuthProvaider extends Component {
         .catch(() => {
             this.setState({
                 user: null,
-                isLoggedIn: false,
+                isLoggedIn: true,
                 isLoading: false
             });
         })
@@ -69,7 +69,7 @@ class AuthProvaider extends Component {
     render() {
         const {user, isLoggedIn, isLoading} = this.state;
         return isLoading ? <div className='loading-component'>
-            <p>... Your Loguin Component ...</p>
+            <p>... Your Loading Component ...</p>
             </div> : 
             <AuthContext.Provider value={
                 {user, 

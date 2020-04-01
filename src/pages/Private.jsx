@@ -5,8 +5,10 @@ class Private extends Component {
     render() {
         return (
             <main className='private-page'>
-                <h2>this is a Private Page</h2>
-                <Logout {...this.props}/>
+                <h1>Private Page</h1>
+                <div className='logout-button'>
+                    <Logout {...this.props}/>
+                </div>
             </main>
         )
     }

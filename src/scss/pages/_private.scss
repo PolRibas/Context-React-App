@@ -1,0 +1,19 @@
+.private-page{
+    height: 100vh;
+    width: 100vw;
+    @include flexColumnCenter;
+    .logout-button{
+        width: 300px;
+        margin-top: 40px;
+        border: 2px solid $complement;
+        padding: 5px;
+        font-weight: 600;
+        @include flexColumnCenter;
+    }
+    .logout-button:hover{
+        background: $complement;
+        p{
+            color: $complement-three;
+        }
+    }
+}
