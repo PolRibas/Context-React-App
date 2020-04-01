@@ -6,6 +6,8 @@ import PrivateRote from './components/routes/PrivateRote';
 import Private from './pages/Private';
 import AuthProvaider from './context/auth-context';
 
+import "./css/main.css";
+
 const Router = () =>
     <BrowserRouter>
         <Switch>

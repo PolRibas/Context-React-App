@@ -1,0 +1,85 @@
+.home-page{
+    height: 100vh;
+    width: 100vw;
+    // min-height: 400px;
+    overflow-y: scroll;
+    @include flexColumnCenter;
+    .login-box, .signup-box{
+        width: 100%;
+        @include flexColumnCenter;
+        h2{
+            cursor: pointer;
+            width: 100%;
+            text-align: center;
+            text-shadow: 1px 1px 1px $complement;
+            margin-top: 30px;
+        }
+        h2:hover{
+            color: $complement;
+        }
+        form{
+            margin-top: 30px;
+            width: 100%;
+            div{
+                width: 100%;
+                font-weight: 600;
+                @include flexRowCenter;
+                margin-bottom: 20px;
+                label{
+                    font-size: 16px;
+                    width: 100px;
+                    margin-bottom: -5px;
+                }
+                input{
+                    font-size: 16px;
+                    width: 200px;
+                    border-bottom: 2px solid $complement;
+                }
+            }
+            .submit-div{
+                width: 100%;
+                input{
+                    width: 300px;
+                    margin-top: 10px;
+                    border: 2px solid $complement;
+                    padding: 5px;
+                    font-weight: 600;
+                }
+                input:hover{
+                    background: $complement;
+                    color: $complement-three;
+                }
+            }
+            p{
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+    .signup-box{
+        background: $complement-three;
+        border-radius: 20px 20px 0px 0px;
+        h2{
+            color: $secundary;
+        }
+    }
+    .on{
+        height: 85%;
+        transition: 0.8s;
+        form{
+            transition: 1.2s;
+            opacity: 1;
+            height: auto;
+        }
+    }
+    .off{
+        transition: 0.8s;
+        height: 15%;
+        form{
+            // display: none;
+            transition: 1.2s;
+            opacity: 0;
+            height: 0px;
+        }
+    }
+}
