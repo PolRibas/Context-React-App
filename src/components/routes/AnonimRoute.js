@@ -5,6 +5,7 @@ import withAuth from '../HOC/withAuth'
 
 function AnonimRoute(props) {
     const {isLoggedIn, component: Component, ...rest} = props
+    
     return !isLoggedIn ? <Route render={(props) => {
     return <Component {...props}/>}} {...rest}/> : <Redirect to='/spawn' /> 
 }
