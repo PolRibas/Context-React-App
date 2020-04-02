@@ -3,15 +3,15 @@ import {Route, Redirect} from 'react-router-dom';
 import withAuth from '../HOC/withAuth';
 
 
-function AnonimRoute(props) {
+function PrivateRoute(props) {
 	const {isLoggedIn, component: Component, ...rest} = props;
 	return (
-		!isLoggedIn ? 
+		isLoggedIn ? 
 		<Route render={(props) => {
 			return <Component {...props}/>
-		}}{...rest}/> : 
-		<Redirect to='/spawn'/> 
+		}} {...rest}/> : 
+		<Redirect to='/'/> 
 	);
 };
 
-export default withAuth(AnonimRoute);
+export default withAuth(PrivateRoute);

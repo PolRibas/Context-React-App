@@ -1,5 +1,9 @@
-import React from 'react'
+import React from 'react';
 
- const Logout = props => <p onClick={props.logout} >Logout</p>
+const Logout = props => {
+  return (
+    <p onClick={props.logout}>Logout</p>
+  );
+};
 
-export default Logout
+export default Logout;
